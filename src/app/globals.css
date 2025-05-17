@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-geist-sans: "Inter", sans-serif;
+  --font-geist-mono: "Fira Code", monospace;
+  --font-geist-mono-italic: "Fira Code", monospace;
+  --font-geist-mono-bold: "Fira Code", monospace;
+  --font-geist-mono-bold-italic: "Fira Code", monospace;
+  --font-geist-mono-regular: "Fira Code", monospace;
+  --font-geist-mono-regular-italic: "Fira Code", monospace;
+  --font-geist-mono-italic-regular: "Fira Code", monospace;
+  --font-geist-mono-italic-bold: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular-italic: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular-italic-regular: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular-italic-regular-italic: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular-italic-regular-italic-bold: "Fira Code", monospace;
+  --font-geist-mono-italic-bold-regular-italic-regular-italic-bold-regular: "Fira Code", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
